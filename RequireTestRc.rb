@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 
 def test
-	puts 'LoadOrRequire'
+    puts 'LoadOrRequire'
 end
 
 puts 'Load OK!'

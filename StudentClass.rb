@@ -1,11 +1,11 @@
 #! /usr/bin/env ruby
 
 class Student
-	attr_accessor :name
-	attr_accessor :age
-	def introduce
-		puts "I am #{self.name}"
-	end
+    attr_accessor :name
+    attr_accessor :age
+    def introduce
+        puts "I am #{self.name}"
+    end
 end
 
 no1 = Student.new
@@ -19,8 +19,8 @@ no2.age = 14
 students = [no1, no2]
 
 students.each do |student|
-	puts "#{student.name}: #{student.age}"
-	student.introduce
+    puts "#{student.name}: #{student.age}"
+    student.introduce
 end
 
 exit 0

@@ -9,7 +9,7 @@ member2 = Profile.new(name: 'ayaya')
 members = [member1, member2]
 
 members.each do |member|
-	puts member.introduce()
+    puts member.introduce()
 end
 
 exit 0

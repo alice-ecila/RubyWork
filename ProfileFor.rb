@@ -22,10 +22,10 @@ numOfDigits = (count - 1).to_s.length
 format = "%0#{numOfDigits}d: %s\n"
 
 count.times do |i|
-	printf(format,
-		i,
-		members[i].introduce()
-	)
+    printf(format,
+        i,
+        members[i].introduce()
+    )
 end
 
 exit 0

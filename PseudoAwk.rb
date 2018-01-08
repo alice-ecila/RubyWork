@@ -1,16 +1,19 @@
 #! /usr/bin/env ruby
 
-=begin
-p(ARGV)
-gets()
-=end
-
-File::open(ARGV[0]) { |file|
-	file::readlines()::each() { |line|
-		fields = line::chomp()::split(':')
-		puts(fields[ARGV[1]::to_i() - 1])
+def extract(receiver = STDIN)
+	receiver::readlines()::each() { |line|
+		fields = line::chomp()::split(ARGV[2])
+		puts(fields[ARGV[0]::to_i() - 1])
 	}
-}
+end
+
+unless ARGV[1] == '-' then
+	File::open(ARGV[1], 'r') { |file|
+		extract(file)
+	}
+else
+	extract()
+end
 
 exit(0)
 
